@@ -9,7 +9,7 @@ require 'net/http'
 require 'json'
 
 def team_info(team_name)
-  url = URI("https://tank01-nfl-live-in-game-real-time-statistics-nfl.p.rapidapi.com/getNFLTeamRoster?teamID=6&teamAbv=" + team_name + "&getStats=true&fantasyPoints=true")
+  url = URI("https://tank01-nfl-live-in-game-real-time-statistics-nfl.p.rapidapi.com/getNFLTeamRoster?teamID=6&teamAbv=#{team_name}&getStats=true&fantasyPoints=true")
 
   http = Net::HTTP.new(url.host, url.port)
   http.use_ssl = true
