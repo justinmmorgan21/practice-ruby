@@ -113,8 +113,10 @@ json_object["body"]["playerProjections"].each { |player|
     when "RB"
       positions[:RB] << player_obj
     when "TE"
+
       positions[:TE] << player_obj
   end
+
 }
 
 positions.each { |pos, players|  
